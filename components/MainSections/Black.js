@@ -38,7 +38,7 @@ const Black = () => {
 						<p className='mt-6 italic text-white'>
 							Покраска каждого автомобиля - это не только процесс, но и искусство. Доверьте нам ваш автомобиль и убедитесь в качестве нашей работы!
 						</p>
-						<BtnComp red title={'Нужна покраска'} />
+						<BtnComp red title={'Нужна покраска'} index={3} />
 					</div>
 					<div className='sd:w-3/5 xz:w-full relative'>
 						<Image src='/fon/fon6.webp'

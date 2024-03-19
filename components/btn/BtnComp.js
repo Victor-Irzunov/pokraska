@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Modal from "../modal/Modal";
 
-const BtnComp = ({ title, index, center, red }) => {
+const BtnComp = ({ title, index, center, red, name }) => {
 	const [selectedProduct, setSelectedProduct] = useState(null);
 	const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
@@ -20,7 +20,7 @@ const BtnComp = ({ title, index, center, red }) => {
 		<div className={`mt-10 flex items-center ${center ? 'justify-center' : ''}`}>
 			<button
 				className={`${red ? 'bg-primary' : 'bg-secondary'} btn border-none skeleton rounded-none uppercase text-white`}
-				onClick={() => handleOrderClick(title)}
+				onClick={() => handleOrderClick(name ? name : title)}
 			>
 				{title}
 			</button>

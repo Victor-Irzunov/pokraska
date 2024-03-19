@@ -8,7 +8,7 @@ const Modal = ({ selectedProduct, closeModal, isFormSubmitted, setIsFormSubmitte
 				<div className="modal-box text-black ">
 					<p className="font-semibold text-lg">{selectedProduct ? `${selectedProduct}` : 'Заказать звонок'}</p>
 					<p className="py-1 mt-3 text-sm text-gray-600">
-						Пожалуйста, заполните данные в форме и наш менеджер рассчитает точную стоимость за 2 минуты и ответит на все вопросы.
+						Пожалуйста, заполните форму, и наш менеджер свяжется с вами, чтобы ответить на все ваши вопросы.
 					</p>
 					<form method="dialog">
 						<button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>

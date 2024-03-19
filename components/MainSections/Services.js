@@ -49,7 +49,7 @@ const Services = () => {
 									))}
 								</ul>
 								<div className="card-actions -mt-7">
-									<BtnComp title={'Оставить заявку'} center />
+									<BtnComp title={'Оставить заявку'} center index={index + 5} name={item.title} />
 								</div>
 							</div>
 						</div>

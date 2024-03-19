@@ -32,7 +32,7 @@ const Portfolio = () => {
 							<p className='text-gray-700 text-2xl font-semibold'>
 								Кузовной ремонт
 							</p>
-							<BtnComp title={'Записаться на ремонт'} red />
+							<BtnComp title={'Записаться на ремонт'} red index={5} />
 						</div>
 
 						<div className='bg-primary p-10 flex flex-col justify-center items-center'>
@@ -54,6 +54,10 @@ const Portfolio = () => {
 					</div>
 
 				</div>
+
+				<p className='text-center mt-10 font-semibold text-lg'>
+          Готовы привести ваш автомобиль к идеальному состоянию? Закажите покраску или ремонт кузова прямо сейчас и ощутите разницу с первых минут!
+        </p>
 			</div>
 		</section>
 	)
