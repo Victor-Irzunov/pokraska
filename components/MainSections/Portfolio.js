@@ -50,11 +50,8 @@ const Portfolio = () => {
 								className="bg-cover w-full h-full"
 							/>
 						</div>
-
 					</div>
-
 				</div>
-
 				<p className='text-center mt-10 font-semibold text-lg'>
           Готовы привести ваш автомобиль к идеальному состоянию? Закажите покраску или ремонт кузова прямо сейчас и ощутите разницу с первых минут!
         </p>

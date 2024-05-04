@@ -8,7 +8,7 @@ const FormOrder = ({ selectedProduct, closeModal, setIsFormSubmitted, title, btn
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		let messageForm = `<b>Заказ с сайта Автомойка:</b>\n`
+		let messageForm = `<b>Заказ с сайта Покраска авто:</b>\n`
 		messageForm += `<b>${selectedProduct} </b>\n`
 		messageForm += `<b>--------------- </b>\n`
 		messageForm += `<b>Телефон:</b> ${formData.phone}\n`
