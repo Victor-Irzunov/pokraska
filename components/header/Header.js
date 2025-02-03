@@ -85,10 +85,10 @@ export default function Header() {
 											<p className='uppercase text-gray-400 text-xs font-bold'>
 												телефон СТО
 											</p>
-											<a href='tel:80290000000'
+											<a href='tel:+375447810661'
 												className='link link-hover flex'
 											>
-												+375 29 000-00-00
+												+375 44 781-06-61
 												<Image src='/svg/a1.svg' alt='Телефон оператора А1' width={15} height={15} className='ml-1.5' />
 											</a>
 										</div>
@@ -197,10 +197,10 @@ export default function Header() {
 
 
 						<div className='flex flex-col text-white'>
-							<a href='tel:80290000000'
+							<a href='tel:+375447810661'
 								className='link link-hover flex sd:text-xl xz:text-base'
 							>
-								+375 29 000-00-00
+								+375 44 781-06-61
 								<Image src='/svg/a1.svg' alt='Телефон оператора А1' width={15} height={15} className='ml-1.5 sd:block xz:hidden' />
 							</a>
 						</div>

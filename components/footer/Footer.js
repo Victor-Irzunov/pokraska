@@ -37,19 +37,19 @@ const Footer = () => {
 								Контакты
 							</p>
 							<div className='flex'>
-								<a href='tel:80' className="font-semibold sd:text-xl xz:text-xl mr-2">
-									+375 29 000-00-00
+								<a href='tel:+375447810661' className="font-semibold sd:text-xl xz:text-xl mr-2">
+									+375 44 781-06-61
 								</a>
 								<Image src='/svg/a1.svg' alt='Оператор А1 для записи на автомойку' width={20} height={20} />
 							</div>
 
 
-							<div className='mt-2 flex'>
+							{/* <div className='mt-2 flex'>
 								<a href='tel:8033' className="font-semibold sd:text-xl xz:text-xl mr-2">
 									+375 33 000-00-00
 								</a>
 								<Image src='/svg/mts.svg' alt='Оператор МТС для записи на автомойку' width={55} height={55} />
-							</div>
+							</div> */}
 						</div>
 					</div>
 
@@ -59,7 +59,7 @@ const Footer = () => {
 							Адрес
 						</p>
 						<p className='text-lg'>
-							Минск, ул. Независимости 00
+						г.Минск ул. Автомобилистов 2
 						</p>
 					</div>
 
