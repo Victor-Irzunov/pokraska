@@ -1,10 +1,14 @@
 "use client"
+import { sendOrderTelegram } from '@/http/telegramAPI';
 import Image from 'next/image';
 import { Link as LinkScroll } from 'react-scroll';
 
 export default function Header() {
+	const handlePhoneClick = async () => {
+		const message = "Клик по номеру покраска авто";
+		await sendOrderTelegram(message);
+	};
 
-	// sticky top-0
 	return (
 		<header className='z-50 bg-transparent relative'>
 			<div className='container mx-auto'>
@@ -87,6 +91,7 @@ export default function Header() {
 											</p>
 											<a href='tel:+375447810661'
 												className='link link-hover flex'
+												onClick={handlePhoneClick}
 											>
 												+375 44 781-06-61
 												<Image src='/svg/a1.svg' alt='Телефон оператора А1' width={15} height={15} className='ml-1.5' />
@@ -183,28 +188,16 @@ export default function Header() {
 						</ul>
 					</div>
 					<div className="navbar-end">
-						{/* <div className='text-xs mr-10 xz:hidden sd:block'>
-							<p className='font-semibold text-white/65'>
-								Режим работы:
-							</p>
-							<p className='text-white'>
-								8:00-20:00
-							</p>
-							<p className='text-white'>
-								Выходной: <span className='text-red-500'>ВС</span>
-							</p>
-						</div> */}
-
-
 						<div className='flex flex-col text-white'>
-							<a href='tel:+375447810661'
+							<a
+								href='tel:+375447810661'
 								className='link link-hover flex sd:text-xl xz:text-base'
+								onClick={handlePhoneClick}
 							>
 								+375 44 781-06-61
 								<Image src='/svg/a1.svg' alt='Телефон оператора А1' width={15} height={15} className='ml-1.5 sd:block xz:hidden' />
 							</a>
 						</div>
-
 					</div>
 				</div>
 			</div>

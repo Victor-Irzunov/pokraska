@@ -2,8 +2,13 @@
 import Image from "next/image";
 import Icon from "../iconMesseger/Icon";
 import { Link as LinkScroll } from 'react-scroll';
+import { sendOrderTelegram } from "@/http/telegramAPI";
 
 const Footer = () => {
+	const handlePhoneClick = async () => {
+			const message = "Клик по номеру покраска авто";
+			await sendOrderTelegram(message);
+		};
 	return (
 		<footer className={`py-4 relative bg-secondary`} id='contacts'>
 			<div className='container mx-auto'>
@@ -37,19 +42,14 @@ const Footer = () => {
 								Контакты
 							</p>
 							<div className='flex'>
-								<a href='tel:+375447810661' className="font-semibold sd:text-xl xz:text-xl mr-2">
+								<a href='tel:+375447810661'
+									className="font-semibold sd:text-xl xz:text-xl mr-2"
+									onClick={handlePhoneClick}
+								>
 									+375 44 781-06-61
 								</a>
-								<Image src='/svg/a1.svg' alt='Оператор А1 для записи на автомойку' width={20} height={20} />
+								<Image src='/svg/a1.svg' alt='Оператор А1 для записи на покраску, полировку или ремонт кузова авто' width={20} height={20} />
 							</div>
-
-
-							{/* <div className='mt-2 flex'>
-								<a href='tel:8033' className="font-semibold sd:text-xl xz:text-xl mr-2">
-									+375 33 000-00-00
-								</a>
-								<Image src='/svg/mts.svg' alt='Оператор МТС для записи на автомойку' width={55} height={55} />
-							</div> */}
 						</div>
 					</div>
 
@@ -73,9 +73,6 @@ const Footer = () => {
 							</span>
 						</p>
 					</div>
-
-
-
 					<nav className='sd:mt-0 xz:mt-4'>
 						<p className="footer-title">Social</p>
 						<div className="grid grid-flow-col gap-4">
