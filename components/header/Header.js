@@ -59,7 +59,7 @@ export default function Header() {
 									</li>
 									<li>
 										<LinkScroll
-											to="main"
+											to="about"
 											smooth={true}
 											offset={-100}
 											duration={800}
@@ -72,7 +72,7 @@ export default function Header() {
 									</li>
 									<li>
 										<LinkScroll
-											to="main"
+											to="contacts"
 											smooth={true}
 											offset={-100}
 											duration={800}
@@ -93,7 +93,7 @@ export default function Header() {
 												className='link link-hover flex'
 												onClick={handlePhoneClick}
 											>
-												+375 44 781-06-61
+												+375 00 000-00-00
 												<Image src='/svg/a1.svg' alt='Телефон оператора А1' width={15} height={15} className='ml-1.5' />
 											</a>
 										</div>
@@ -161,7 +161,7 @@ export default function Header() {
 							</li>
 							<li>
 								<LinkScroll
-									to="main"
+									to="about"
 									smooth={true}
 									offset={-100}
 									duration={800}
@@ -174,7 +174,7 @@ export default function Header() {
 							</li>
 							<li>
 								<LinkScroll
-									to="main"
+									to="contacts"
 									smooth={true}
 									offset={-100}
 									duration={800}
@@ -190,11 +190,11 @@ export default function Header() {
 					<div className="navbar-end">
 						<div className='flex flex-col text-white'>
 							<a
-								href='tel:+375447810661'
+								href='tel:+375440000000'
 								className='link link-hover flex sd:text-xl xz:text-base'
 								onClick={handlePhoneClick}
 							>
-								+375 44 781-06-61
+								+375 44 000-00-00
 								<Image src='/svg/a1.svg' alt='Телефон оператора А1' width={15} height={15} className='ml-1.5 sd:block xz:hidden' />
 							</a>
 						</div>

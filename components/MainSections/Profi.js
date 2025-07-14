@@ -3,7 +3,7 @@ import BtnComp from "../btn/BtnComp"
 
 const Profi = () => {
 	return (
-		<section className='bg-white relative py-16'>
+		<section className='bg-white relative py-16' id="about">
 			<div className='container mx-auto'>
 				<div className='flex sd:flex-row xz:flex-col'>
 
