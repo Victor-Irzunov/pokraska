@@ -87,14 +87,14 @@ export default function Header() {
 									<li className='mt-16'>
 										<div className='flex flex-col items-start justify-start'>
 											<p className='uppercase text-gray-400 text-xs font-bold'>
-												телефон СТО
+												телефон мастера
 											</p>
-											<a href='tel:+375447810661'
+											<a href='tel:+375257332877'
 												className='link link-hover flex'
 												onClick={handlePhoneClick}
 											>
-												+375 00 000-00-00
-												<Image src='/svg/a1.svg' alt='Телефон оператора А1' width={15} height={15} className='ml-1.5' />
+												+375 25 733-28-77
+												<Image src='/svg/a1.svg' alt='Телефон оператора Life' width={15} height={15} className='ml-1.5' />
 											</a>
 										</div>
 									</li>
@@ -190,12 +190,12 @@ export default function Header() {
 					<div className="navbar-end">
 						<div className='flex flex-col text-white'>
 							<a
-								href='tel:+375440000000'
+								href='tel:+375257332877'
 								className='link link-hover flex sd:text-xl xz:text-base'
 								onClick={handlePhoneClick}
 							>
-								+375 44 000-00-00
-								<Image src='/svg/a1.svg' alt='Телефон оператора А1' width={15} height={15} className='ml-1.5 sd:block xz:hidden' />
+								+375 25 733-28-77
+								<Image src='/svg/a1.svg' alt='Телефон оператора Life' width={15} height={15} className='ml-1.5 sd:block xz:hidden' />
 							</a>
 						</div>
 					</div>

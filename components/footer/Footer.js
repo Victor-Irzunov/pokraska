@@ -42,11 +42,11 @@ const Footer = () => {
 								Контакты
 							</p>
 							<div className='flex'>
-								<a href='tel:+375447810661'
+								<a href='tel:+375257332877'
 									className="font-semibold sd:text-xl xz:text-xl mr-2"
 									onClick={handlePhoneClick}
 								>
-									+375 00 000-00-00
+									+375 25 733-28-77
 								</a>
 								<Image src='/svg/a1.svg' alt='Оператор А1 для записи на покраску, полировку или ремонт кузова авто' width={20} height={20} />
 							</div>
@@ -59,7 +59,7 @@ const Footer = () => {
 							Адрес
 						</p>
 						<p className='text-lg'>
-						г.Минск ул. Автомобилистов 10
+						г.Минск ул. Автомобилистов 2
 						</p>
 					</div>
 
