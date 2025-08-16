@@ -3,6 +3,7 @@ import Image from "next/image";
 import Icon from "../iconMesseger/Icon";
 import { Link as LinkScroll } from 'react-scroll';
 import { sendOrderTelegram } from "@/http/telegramAPI";
+import phoneNumbers from "@/config/config";
 
 const Footer = () => {
 	const handlePhoneClick = async () => {
@@ -42,11 +43,11 @@ const Footer = () => {
 								Контакты
 							</p>
 							<div className='flex'>
-								<a href='tel:+375257332877'
-									className="font-semibold sd:text-xl xz:text-xl mr-2"
+								<a href={`tel:${phoneNumbers.phone1Link}`}
+									className="font-semibold sd:text-xl xz:text-xl mr-2 underline"
 									onClick={handlePhoneClick}
 								>
-									+375 25 733-28-77
+									Позвонить мастеру
 								</a>
 								<Image src='/svg/a1.svg' alt='Оператор А1 для записи на покраску, полировку или ремонт кузова авто' width={20} height={20} />
 							</div>
@@ -59,7 +60,7 @@ const Footer = () => {
 							Адрес
 						</p>
 						<p className='text-lg'>
-						г.Минск ул. Автомобилистов 2
+						г.Минск ул. Минская 100
 						</p>
 					</div>
 
@@ -85,9 +86,9 @@ const Footer = () => {
 
 			<aside className="border-t pt-1">
 				<div className='container mx-auto text-center '>
-					<p className='text-gray-200 xs:text-xs xz:text-[10px] font-light' >
+					<p className='text-gray-600 xs:text-xs xz:text-[10px] font-light' >
 						Copyright © 2024 | Разработка и Продвижение
-						<a href='https://vi-tech.by' target='_blank' rel="noreferrer" className='text-primary underline'> VI:TECH</a>.
+						<a href='https://vi-tech.by' target='_blank' rel="noreferrer" className='text-primary/50 underline'> VI:TECH</a>.
 						{' '}Информация на сайте не является публичной офертой и предоставляется исключительно в информационных целях.
 					</p>
 				</div>

@@ -1,4 +1,5 @@
 "use client"
+import phoneNumbers from '@/config/config';
 import { sendOrderTelegram } from '@/http/telegramAPI';
 import Image from 'next/image';
 import { Link as LinkScroll } from 'react-scroll';
@@ -89,11 +90,11 @@ export default function Header() {
 											<p className='uppercase text-gray-400 text-xs font-bold'>
 												телефон мастера
 											</p>
-											<a href='tel:+375257332877'
+											<a href={`tel:${phoneNumbers.phone1Link}`}
 												className='link link-hover flex'
 												onClick={handlePhoneClick}
 											>
-												+375 25 733-28-77
+												Позвонить мастеру
 												<Image src='/svg/a1.svg' alt='Телефон оператора Life' width={15} height={15} className='ml-1.5' />
 											</a>
 										</div>
@@ -190,12 +191,12 @@ export default function Header() {
 					<div className="navbar-end">
 						<div className='flex flex-col text-white'>
 							<a
-								href='tel:+375257332877'
-								className='link link-hover flex sd:text-xl xz:text-base'
+								href={`tel:${phoneNumbers.phone1Link}`}
+								className='link link-hover flex sd:text-xl xz:text-base underline'
 								onClick={handlePhoneClick}
 							>
-								+375 25 733-28-77
-								<Image src='/svg/a1.svg' alt='Телефон оператора Life' width={15} height={15} className='ml-1.5 sd:block xz:hidden' />
+								Позвонить мастеру
+								<Image src='/svg/a1.svg' alt='Телефон оператора' width={15} height={15} className='ml-1.5 sd:block xz:hidden' />
 							</a>
 						</div>
 					</div>
